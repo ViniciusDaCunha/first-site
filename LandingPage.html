@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .bg-grey {
+            background-color: #f5f7fa;
+        }
+
+        .bg-dark-blue {
+            background-color: rgba(38, 50, 56, 1);
+        }
+
+        header {
+            width: 1440px;
+            height: 84px;
+            gap: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: #f5f7fa;
+        }
+
+        .logo-nav {
+            width: 154.49px;
+            height: 24px;
+            gap: 8px;
+        }
+
+        .nav-bar {
+            width: 588px;
+            height: 24px;
+            gap: 0px;
+        }
+
+        .nav-menu {
+            width: 588px;
+            height: 24px;
+            gap: 50px;
+            display: flex;
+        }
+
+        .nav-itens a {
+            width: auto;
+            height: 24px;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: left;
+            color: #263238;
+            text-decoration: none;
+        }
+
+        .links-footer a {
+            width: auto;
+            height: 24px;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: left;
+            color: #263238;
+            text-decoration: none;
+        }
+
+        .login {
+            width: 182px;
+            height: 40px;
+            gap: 14px;
+            display: flex;
+
+        }
+
+        .login-button {
+            width: 77px;
+            height: 40px;
+            padding: 10px 10px;
+            gap: 10px;
+            border-radius: 6px;
+            background: rgba(245, 247, 250, 1);
+        }
+
+        .click-login-button {
+            width: 62px;
+            height: 20px;
+            gap: 0px;
+            font-size: 14px;
+            text-align: center;
+            color: rgba(76, 175, 79, 1);
+            background: rgba(245, 247, 250, 1);
+            border: none;
+        }
+
+        .sing-up-button {
+            width: 91px;
+            height: 40px;
+            padding: 10px 10px;
+            text-align: center;
+            gap: 10px;
+            border-radius: 6px;
+            background: rgba(76, 175, 79, 1);
+        }
+
+        .click-sing-up-button {
+            width: 62px;
+            height: 20px;
+            gap: 0px;
+            font-size: 14px;
+            text-align: center;
+            background: rgba(76, 175, 79, 1);
+            color: rgba(245, 247, 250, 1);
+            border: none;
+        }
+
+        .home {
+            width: 1440px;
+            gap: 40px;
+        }
+
+        .hero-section {
+            width: 1440px;
+            height: 599px;
+            padding: 96px 144px;
+            gap: 104px;
+            display: flex;
+            background-color: #f5f7fa;
+        }
+
+        .frame-1 {
+            width: 657px;
+            height: auto;
+            gap: 32px;
+        }
+
+        .frame-text {
+            width: 657px;
+            height: 192px;
+            gap: 16px;
+        }
+
+        .frame-text-title {
+            width: 657px;
+            height: 152px;
+            font-weight: 600;
+            font-size: 64px;
+            color: #4d4d4d;
+        }
+
+        span {
+            color: rgba(76, 175, 79, 1);
+            text-align: left;
+        }
+
+        .frame-text-p {
+            width: 657px;
+            height: 24px;
+            font-weight: 400;
+            font-size: 16px;
+            color: #4d4d4d;
+            margin-top: 24px;
+        }
+
+        p {
+            margin: 0px;
+        }
+
+        .ilustration-1 {
+            width: 391px;
+            height: 407px;
+            gap: 0px;
+        }
+
+        .frame-button {
+            width: 128px;
+            height: 52px;
+            padding: 14px 32px;
+            gap: 10px;
+            border-radius: 4px;
+            background-color: rgba(76, 175, 79, 1);
+            margin-top: 24px;
+        }
+
+        .click-frame-button {
+            width: 64px;
+            height: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
+            border: none;
+            color: rgba(245, 247, 250, 1);
+            background-color: rgba(76, 175, 79, 1);
+        }
+
+        .dot {
+            width: 46px;
+            height: 10px;
+            margin-top: 281px;
+            margin-left: 558px;
+            gap: 8px;
+        }
+
+        .clients {
+            width: 1440px;
+            padding: 0px 144px;
+            gap: 16px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .clients-section {
+            width: 1110px;
+            height: 76px;
+            gap: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .clients-title {
+            width: 1110px;
+            height: 44px;
+            font-weight: 600;
+            font-size: 36px;
+            text-align: center;
+
+            color: rgba(77, 77, 77, 1);
+        }
+
+        .clients-subtitle {
+            width: 1110px;
+            height: 24px;
+            gap: 0px;
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            color: rgba(113, 113, 113, 1);
+
+        }
+
+        .clints-logo {
+            width: 1152px;
+            height: 98px;
+            gap: 0px;
+        }
+
+        .community {
+            width: 1440px;
+            gap: 16px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .community-section {
+            width: 1440px;
+            height: 120px;
+            gap: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .community-title {
+            width: 542px;
+            height: 88px;
+            gap: 0px;
+            font-size: 36px;
+            font-weight: 600;
+            text-align: center;
+            color: rgba(77, 77, 77, 1);
+
+        }
+
+        .community-subtitle {
+            width: 1440px;
+            height: 24px;
+            gap: 0px;
+            font-size: 16px;
+            font-weight: 24px;
+            text-align: center;
+            color: rgba(113, 113, 113, 1);
+        }
+
+        .frame-4 {
+            width: 1440px;
+            padding: 0px 144px;
+            opacity: 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .frame-community {
+            width: 299px;
+            padding: 24px 32px;
+            gap: 8px;
+            border-radius: 8px;
+        }
+
+        .member {
+            width: 267px;
+            height: 144px;
+            gap: 16px;
+        }
+
+        .member-icon {
+            width: auto;
+            height: 56px;
+            padding-left: 90px;
+        }
+
+        .member-title {
+            width: 242px;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 36px;
+            text-align: center;
+            color: rgba(77, 77, 77, 1);
+        }
+
+        .member-text {
+            width: 251px;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            color:  rgba(113, 113, 113, 1);
+
+        }
+
+        .unlock {
+            width: 1440px;
+            gap: 48px;
+            display: flex;
+            align-items: center;
+            padding-left: 144px;
+            padding-right: 144px;     
+        }
+
+        .unlock-img {
+            width: 442px;
+            height: 433px;
+            padding: 52px 1px;
+        }
+
+        .unlock-img-mobile {
+            width: 442px;
+            height: 433px;
+        }
+
+        .unlock-frame {
+            width: 661px;
+        }
+
+        .unlock-frame-text {
+            width: 601px;
+            height: 184px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .unlock-frame-text-title {
+            width: 601px;
+            font-weight: 600;
+            font-size: 37px;
+            color: rgba(77, 77, 77, 1);
+
+        }
+
+        .unlock-frame-text-p {
+            width: 601px;
+            height: 80px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(113, 113, 113, 1);
+
+        }
+
+        .unlock-frame-button {
+            width: 128px;
+            height: 52px;
+            padding: 14px 23px;
+            gap: 10px;
+            border-radius: 4px;
+            background-color: rgba(76, 175, 79, 1);
+            margin-top: 24px;
+        }
+
+        .unlock-click-frame-button {
+            width: 84px;
+            height: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: center;
+            border: none;
+            color: rgba(245, 247, 250, 1);
+            background-color: rgba(76, 175, 79, 1);
+        }
+
+        .achievements {
+            width: 1440px;
+            height: 288px;
+            padding: 64px 144px;
+            display: flex;
+        }
+
+        .section-heading {
+            width: 540px;
+            height: 120px;
+            gap: 8px;
+
+        }
+
+        .section-heading-title {
+            width: 408px;
+            height: 88px;
+            gap: 8px;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 44px;
+            text-align: left;
+            color: rgba(77, 77, 77, 1);
+
+        }
+
+        .section-heading-text {
+            width: 540px;
+            height: 24px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: rgba(24, 25, 31, 1);
+        }
+
+        .counts {
+            width: 540px;
+            height: 160px;
+            gap: 40px;
+            padding-right: 64px 144px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            width: 540px;
+            height: 60px;
+            gap: 30px;
+            display: flex
+        }
+
+        .row-iten {
+            width: 255px;
+            height: 60px;
+            gap: 30px;
+            display: flex;
+        }
+
+        .row-icon {
+            width: 48px;
+            height: 48px;
+            padding: 8.24px 0.47px 8.65px 0.75px;
+        }
+
+        .row-info { 
+            width: 191px;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row-info-number {
+            width: 191px;
+            height: 36px;
+            font-size: 28px;
+            font-weight: 700;
+            text-align: left;
+            color: rgba(77, 77, 77, 1);
+        }
+
+        .row-info-description {
+            width: 191px;
+            height: 24px;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+            color: rgba(113, 113, 113, 1);
+        }
+
+        .footer {
+            width: 1440px;
+            gap: 0px;
+        }
+
+        .frame-16 {
+            width: 1440px;
+            height: 300px;
+            padding: 32px 0px;
+            gap: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-title {
+            width: 887px;
+            height: 152px;
+            gap: 0px;
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 76px;
+            text-align: center;
+            color: rgba(38, 50, 56, 1);
+        }
+
+        .footer-button {
+            width: 178px;
+            height: 52px;
+            padding: 6px 12px;
+            gap: 8px;
+            border-radius: 4px;
+            background: rgba(76, 175, 79, 1);
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-click-button {
+            width: 103px;
+            height: 37px;
+            gap: 0px;
+            font-size: 16px;
+            text-align: center;
+            color: rgba(255, 255, 255, 1);
+            background: rgba(76, 175, 79, 1);
+            border: none;
+        }
+
+        .arrow {
+            width: 20px;
+            height: 21px;
+            padding: 12px 0.5px;
+            gap: 0px;
+            background: rgba(76, 175, 79, 1);
+        }
+
+        .big-footer {
+            width: 1440px;
+            height: 329px;
+            padding: 64px 165px;
+            gap: 125px;
+        }
+
+        .footer-bottom {
+            width: 1440px;
+            height: 328px;
+            padding: 64px 165px;
+            gap: 125px;
+            background: rgba(38, 50, 56, 1);
+            margin-top: 0px;
+            display: flex;
+        }
+
+        .company-info {
+            width: 350px;
+            height: 189.67px;
+            gap: 44px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .copy-right {
+            width: 350px;
+            height: 48px;
+            gap: 8px;
+        }
+
+        .copy-right-text {
+            width: 350px;
+            height: 20px;
+            gap: 0px;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(245, 247, 250, 1);
+        }
+
+        .social-midia {
+            width: 176px;
+            height: 32px;
+            gap: 16px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .social-link {
+            width: 32px;
+            height: 32px;
+            gap: 0px;
+        }
+
+        .social-link a {
+            display: inline-block;
+        }
+
+        .social-link a img {
+            display: block;
+        }
+
+        .BG {
+            width: 32px;
+            height: 32px;
+            gap: 0px;
+            opacity: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .icon-social-midia {
+            width: 17.07px;
+            height: 17.07px;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .links-footer {
+            width: 635px;
+            height: 200px;
+            gap: 30px;
+            display: flex;
+        }
+
+        .about-company-support {
+            width: 160px;
+            height: 200px;
+            gap: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .about-company-support-newsletter-title {
+            width: 160px;
+            height: 28px;
+            gap: 0px;
+            font-size: 20px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .about-support-list {
+            width: 160px;
+            height: 148px;
+            gap: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .list-itens {
+            width: 160px;
+            height: 20px;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+
+        }
+
+        .newsletter {
+            width: 255px;
+            height: 92px;
+            gap: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .set-email {
+            width: 255px;
+            height: 40px;
+            gap: 0px;
+        }
+
+        .BG-input {
+            width: 255px;
+            height: 40px;
+            border-radius: 8px;
+            opacity: 1;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            padding-left: 12px;
+            padding-right: 12px;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .email-input {
+            width: 126px;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(217, 219, 225, 1);
+            flex: 1;
+        }
+
+        .email-input input {
+            width: 126px;
+            color: white;
+            background: rgba(255, 255, 255, 0);
+            font-size: 14px;
+            line-height: 20px;
+            border: none;
+            width: 100%;
+        }
+
+        .email-input input::placeholder {
+            color: white;
+            opacity: 1;
+        }
+
+        .send-email-img {
+            width: 18px;
+            height: 18px;
+            gap: 0px;
+            opacity: 0px;
+            cursor: pointer;
+        }
+
+        .central-area {
+            width: 1440px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grey">
+        <div class="central-area">
+            <header>
+                <div class="logo-nav">
+                    <img src="assets/Logo.png" />
+                </div>
+
+                <nav class="nav-bar">
+                    <div class="nav-menu">
+                        <div class="nav-itens"><a href="#">Home</a></div>
+                        <div class="nav-itens"><a href="#">Service</a></div>
+                        <div class="nav-itens"><a href="#">Feature</a></div>
+                        <div class="nav-itens"><a href="#">Product</a></div>
+                        <div class="nav-itens"><a href="#">Testinial</a></div>
+                        <div class="nav-itens"><a href="#">FAQ</a></div>
+                    </div>
+                </nav>
+                <div class="login">
+                    <div class="login-button">
+                        <button class="click-login-button">Login</button>
+                    </div>
+                    <div class="sing-up-button">
+                        <button class="click-sing-up-button">Sing up</button>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="bg-grey">
+        <div class="central-area">
+            <div class="home">
+                <div class="hero-section">
+                    <div class="frame-1">
+                        <div class="frame-text">
+                            <div class="frame-text-title">
+                                <p>Lessons and insights<br /><span>from 8 years</span></p>
+                            </div>
+                            <div class="frame-text-p">
+                                <p>Where to grow your business as a photographer: site or social media?</p>
+                            </div>
+                            <div class="frame-button">
+                                <button class="click-frame-button">Register</button>
+                            </div>
+                        </div>
+                        <div class="dot">
+                            <img src="assets/Dot.png" />
+                        </div>
+                    </div>
+                    <div class="ilustration-1">
+                        <img src="assets/Illustration.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="central-area">
+            <div class="clients">
+                <div class="clients-section">
+                    <div class="clients-title">Our Clients</div>
+                    <div class="clients-subtitle">We have been working with some Fortune 500+ clients</div>
+                </div>
+                <div class="client-logo">
+                    <img src="assets/Clients Logos.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="">
+        <div class="central-area">
+            <div class="community">
+                <div class="community-section">
+                    <div class="community-title">Manage your entire community in a single system</div>
+                    <div class="community-subtitle">Who is Nextcent suitable for?</div>
+                </div>
+                <div class="frame-4">
+                    <div class="frame-community">
+                        <div class="member">
+                            <div class="member-icon">
+                                <img src="assets/nationalassociations.png"/>
+                            </div>
+                            <div class="member-title">Membership Organizations</div>
+                        </div>
+                        <div class="member-text">Our membership management software provides full automation of membership renewals and payments</div>
+                    </div>
+                    <div class="frame-community">
+                        <div class="member">
+                            <div class="member-icon">
+                                <img src="assets/nationalassociations.png"/>
+                            </div>
+                            <div class="member-title">National Associations</div>
+                        </div>
+                        <div class="member-text">Our membership management software provides full automation of membership renewals and payments</div>
+                    </div>
+                    <div class="frame-community">
+                        <div class="member">
+                            <div class="member-icon">
+                                <img src="assets/clubs.png"/>
+                            </div>
+                            <div class="member-title">Clubs and Groups</div>
+                        </div>
+                        <div class="member-text">Our membership management software provides full automation of membership renewals and payments</div>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="central-area">
+            <div class="unlock">
+                <div class="unlock-img">
+                    <img src="assets/rafiki.png"/>
+                </div>
+                <div class="unlock-frame">
+                    <div class="unlock-frame-text">
+                        <div class="unlock-frame-text-title">The unseen of spending three years at Pixelgrade</div>
+                        <div class="unlock-frame-text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</div>
+                    </div>
+                    <div class="unlock-frame-button">
+                        <button class="unlock-click-frame-button">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-grey">
+        <div class="central-area">
+            <div class="achievements">
+                <div class="section-heading">
+                    <div class="section-heading-title">
+                        <p>Helping a local <br/> <span>business reinvent itself</span></p>
+                    </div>
+                    <div class="section-heading-text">We reached here with our hard work and dedication</div>
+                </div>
+                                         
+                <div class="counts">
+                   <div class="row">
+                    <div class="row-iten">
+                        <div class="row-icon">
+                            <img src="assets/row1.png"/>
+                        </div>
+                        <div class="row-info">
+                            <div class="row-info-number">2,245,341</div>
+                            <div class="row-info-description">Members</div>
+                        </div>
+                    </div>
+                    <div class="row-iten">
+                        <div class="row-icon">
+                            <img src="assets/row2.png"/>
+                        </div>
+                        <div class="row-info">
+                            <div class="row-info-number">46,328</div>
+                            <div class="row-info-description">Clubs</div>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="row-iten">
+                        <div class="row-icon">
+                            <img src="assets/row3.png"/>
+                        </div>
+                        <div class="row-info">
+                            <div class="row-info-number">828,867</div>
+                            <div class="row-info-description">Event Bookings</div>
+                        </div>
+                    </div>
+                    <div class="row-iten">
+                        <div class="row-icon">
+                            <img src="assets/row4.png"/>
+                        </div>
+                        <div class="row-info">
+                            <div class="row-info-number">1,926,436</div>
+                            <div class="row-info-description">Payments</div>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="">
+        <div class="central-area">
+            <div class="unlock">
+                <div class="unlock-img-mobile">
+                    <img src="assets/pana.png"/>
+                </div>
+                <div class="unlock-frame">
+                    <div class="unlock-frame-text">
+                        <div class="unlock-frame-text-title">The unseen of spending three years at Pixelgrade</div>
+                        <div class="unlock-frame-text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</div>
+                    </div>
+                    <div class="unlock-frame-button">
+                        <button class="unlock-click-frame-button">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-grey">
+        <div class="central-area">
+            <div class="frame-16">
+                <div class="footer-title">Pellentesque suscipit fringilla libero eu.</div>
+                <div class="footer-button">
+                    <button class="footer-click-button">Get a Demo</button>
+                    <div class="arrow">
+                        <img src="assets/Right.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-dark-blue">
+        <div class="central-area">
+
+            <footer class="footer">
+                <div class="footer-bottom">
+                    <div class="company-info">
+                        <div class="logo-nav">
+                            <img src="assets/Logo-footer.png" />
+                        </div>
+                        <div class="copy-right">
+                            <div class="copy-right-text">Copyright © 2020 Nexcent ltd.</div>
+                            <div class="copy-right-text">All rights reserved</div>
+                        </div>
+
+                        <div class="social-midia">
+                            <div class="social-link">
+                                <div class="BG">
+                                    <a href="https://www.instagram.com/">
+                                        <img class="icon-social-midia" src="assets/instagram.png" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="social-link">
+                                <div class="BG">
+                                    <a href="https://twitter.com/">
+                                        <img class="icon-social-midia" src="assets/twitter.png" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="social-link">
+                                <div class="BG">
+                                    <a href="https://github.com//">
+                                        <img class="icon-social-midia" src="assets/Path.png" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="social-link">
+                                <div class="BG">
+                                    <a href="https://www.youtube.com/">
+                                        <img class="icon-social-midia" src="assets/youtube.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links-footer">
+                        <div class="about-company-support">
+                            <div class="about-company-support-newsletter-title">Company</div>
+                            <div class="about-support-list">
+                                <div class="list-itens"><a href="#"></a>About us</div>
+                                <div class="list-itens"><a href="#"></a>Blog</div>
+                                <div class="list-itens"><a href="#"></a>Contact us</div>
+                                <div class="list-itens"><a href="#"></a>Pricing</div>
+                                <div class="list-itens"><a href="#"></a>Testimonials</div>
+                            </div>
+                        </div>
+                        <div class="about-company-support">
+                            <div class="about-company-support-newsletter-title">Suport</div>
+                            <div class="about-support-list">
+                                <div class="list-itens"><a href="#"></a>Help center</div>
+                                <div class="list-itens"><a href="#"></a>Terms of service</div>
+                                <div class="list-itens"><a href="#"></a>Legal</div>
+                                <div class="list-itens"><a href="#"></a>Privacy policy</div>
+                                <div class="list-itens"><a href="#"></a>Status</div>
+                            </div>
+                        </div>
+                        <div class="newsletter">
+                            <div class="about-company-support-newsletter-title">Stay up to date</div>
+                            <div class="set-email">
+                                <div class="BG-input">
+                                    <div class="email-input">
+                                        <input type="email" placeholder="Your e-mail adress">
+                                    </div>
+                                    <div class="send-email-img">
+                                        <img src="assets/send.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
